@@ -1,7 +1,7 @@
 package belajarInheritance;
 /*
  * Simple Inheritance Java
- * @author Zainal Fahrudin
+ * @writer Zainal Fahrudin
  * Pondok Programmer, 21 Oct 2015
  * 
  * */
