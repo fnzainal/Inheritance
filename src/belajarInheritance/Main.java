@@ -1,7 +1,7 @@
 package belajarInheritance;
 /*
  * Simple Inheritance Java
- * @author Zainal Fahrudin
+ * @writer Zainal Fahrudin
  * Pondok Programmer, 21 Oct 2015
  * 
  * */
@@ -9,25 +9,26 @@ package belajarInheritance;
 public class Main {
 
 	public static void main(String[] args){
-		//inisiasi kelas child 
-		Child child =new Child();
-		SubChild subChild = new SubChild();
+		//inisiasi kelas PrintHitungan 
+		PrintHitungan printHitungan =new PrintHitungan();
+		//inisiasi kelas HitungBanyakBalok
+		HitungBanyakBalok hitungBanyakBalok = new HitungBanyakBalok();
 		
-		//inisiasi kelas parent
-		Parent parent = new Parent();
-		parent.title();
-		
-		System.out.println();
-		//memanggil method hitungKubus() dari kelas Child
-		child.hitungKubus();
-		
+		//inisiasi kelas Balok
+		Balok balok = new Balok();
+		//memanggil method title() dari kelas Balok
+		balok.title();
 		
 		System.out.println();
-		//memanggil method Balok() dari kelas Child
-		System.out.println("Volume 7 balok: "+child.Balok()+" m3");
+		//memanggil method hitungKubus() dari kelas PrintHitungan
+		printHitungan.hitungKubus();
 		
 		System.out.println();
-		//memanggil method hitungLuasBalok dari kelas SubChild
-		System.out.println("Luas Permukaan 7 balok : "+subChild.hitungLuasBalok()+" m2");
+		//memanggil method hitungLuasBalok dari kelas HitungBanyakBalok
+		System.out.println("Luas Permukaan 7 balok : "+hitungBanyakBalok.hitungLuasBalok()+" m2");
+		
+		System.out.println();
+		//memanggil method Balok() dari kelas PrintHitungan
+		System.out.println("Volume 7 balok: "+printHitungan.Balok()+" m3");
 	}
 }
